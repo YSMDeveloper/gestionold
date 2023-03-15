@@ -1,0 +1,41 @@
+.menu {
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    justify-content: space-around;
+}
+
+.menu > div {
+    display: flex;
+}
+
+.link {
+    display: block;
+    padding: 20px 15px;
+}
+
+.link:hover {
+    background-color: rgb(38, 111, 180);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .ui.menu {
+      display: none;
+    }
+    .ui.menu.icon {
+      display: block !important;
+    }
+    .ui.menu.icon .item {
+      display: inline-block !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .ui.menu.icon .item .icon {
+      margin: 0 !important;
+    }
+    .ui.menu.icon .item:last-child {
+      border-bottom: none !important;
+    }
+  }
